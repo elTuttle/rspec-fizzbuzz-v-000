@@ -10,6 +10,10 @@ def fizzbuzz(num)
     returnValue += "Buzz"
   end
 
+  if num % 5 != 0 && num % 3 != 0
+    returnValue = nil
+  end
+
   returnValue
 end
 
