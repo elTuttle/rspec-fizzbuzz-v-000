@@ -1,20 +1,19 @@
 def fizzbuzz(num)
-
-  returnValue = ""
-
   if num % 3 == 0
-    returnValue += "Fizz"
+    "Fizz"
   end
 
   if num % 5 == 0
-    returnValue += "Buzz"
+    "Buzz"
   end
-
+  
+  if num % 5 == 0 && num % 3 == 0
+    "FizzBuzz"
+  end
+  
   if num % 5 != 0 && num % 3 != 0
-    returnValue = nil
+    nil
   end
-
-  returnValue
 end
 
 puts fizzbuzz(3)
