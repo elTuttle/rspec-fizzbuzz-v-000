@@ -1,18 +1,18 @@
 def fizzbuzz(num)
   if num % 3 == 0
-    "Fizz"
+    return "Fizz"
   end
 
   if num % 5 == 0
-    "Buzz"
+    return "Buzz"
   end
-  
+
   if num % 5 == 0 && num % 3 == 0
-    "FizzBuzz"
+    return "FizzBuzz"
   end
-  
+
   if num % 5 != 0 && num % 3 != 0
-    nil
+    return nil
   end
 end
 
