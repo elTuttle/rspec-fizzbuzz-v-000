@@ -13,4 +13,4 @@ def fizzbuzz(num)
   returnValue
 end
 
-fizzbuzz(3)
+puts fizzbuzz(3)
