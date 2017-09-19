@@ -1,15 +1,16 @@
 def fizzbuzz(num)
 
-  if((num % 3 == 0) && (num % 5 != 0))
-    return "Fizz"
-  elsif (((num % 3) != 0) && ((num % 5) == 0))
-    return "Buzz"
-  elsif (((num % 3) == 0) && ((num % 5) == 0))
-    return "FizzBuzz"
-  elsif (((num % 3) != 0) && ((num % 5) != 0))
-    return nil
+  returnValue = ""
+
+  if num % 3 == 0
+    returnValue += "Fizz"
   end
 
+  if num % 5 == 0
+    returnValue += "Buzz"
+  end
+  
+  returnValue
 end
 
 fizzbuzz(3)
